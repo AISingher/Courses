@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the editor -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/category_overview"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_course_name"
+                android:hint="Course Name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Room field -->
+            <EditText
+                android:id="@+id/edit_course_room"
+                android:hint="Room"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+            <!-- Teacher field -->
+            <EditText
+                android:id="@+id/edit_course_teacher"
+                android:hint="Teacher"
+                android:inputType="textPersonName"
+                style="@style/EditorFieldStyle" />
+            <!-- Time field -->
+            <EditText
+                android:id="@+id/edit_course_time"
+                android:hint="Start Time"
+                android:inputType="text"
+                style="@style/EditorFieldStyle" />
+            <!-- Day field -->
+            <EditText
+                android:id="@+id/edit_course_day"
+                android:hint="Day of The Week"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
